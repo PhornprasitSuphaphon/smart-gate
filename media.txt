@@ -1,0 +1,25 @@
+navigator.mediaDevices.getUserMedia({
+      audio: true
+      }).then(() => {
+      var audio = new Audio("/static/sounds/notification.mp3");
+      audio.play();
+      })
+      audio.play();
+      var audio = new Audio();
+      audio.src = 'static/sounds/notification.mp3';
+      when the sound has been loaded, execute your code
+      audio.oncanplaythrough = (event) => {
+      var playedPromise = audio.play();
+      if (playedPromise) {
+            playedPromise.catch((e) => {
+                  console.log(e)
+                  if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') {
+                  console.log(e.name);
+                  audio.play();
+                  }
+            }).then(() => {
+                  console.log("playing sound !!!");
+                  audio.play();
+            });
+      }
+}

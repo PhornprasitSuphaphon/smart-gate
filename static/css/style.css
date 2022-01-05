@@ -1,0 +1,216 @@
+
+:root {
+  --bg-color: #151532;
+  --bg-card-color: #1a1840;
+  --second-color: #678fa3;
+  --first-color: #fff;
+  /* --second-color: #3b4f59; */
+  --text-detail-color: #fff;
+  --text-detailSecondary-color: #ff3300;
+  --text-normal-color: #00a700;
+  --text-alert-color: #e66f00;
+  --text-danger-color: #e60f00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Kanit', sans-serif;
+  font-size: 26px;
+  color: #fff;
+}
+
+header {
+  margin-top: 54.2px;
+  margin-left: 40px;
+}
+
+header #logo{
+  width: 180.8px;
+  height: 49.4px;
+}
+
+#thermal_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.bg-temp{
+  margin-top: 90px;
+  background-color: #1a1840;
+  border-radius: 24px;
+}
+#SmartOffice-label{
+  font-size: 38px;
+}
+#floor1-label{
+  font-size: 30px;
+}
+
+#temperature-label{
+  font-size: 56px;
+  font-stretch: normal;
+}
+
+#temperature_unit{
+  font-size: 160px;
+  color:#70cf97;
+}
+#val-temperature-unit{
+  font-size: 70px;
+  margin-left: 20px;
+}
+
+.temp-wrap{
+  margin: 30px 100px;
+}
+
+.list-data{
+  border-radius: 24px;
+  background-color: var(--bg-card-color);
+  margin-top: 48px;
+}
+
+.text-covid {
+  font-size: 50px;
+}
+#img-virus{
+  width: 35px;
+  height: 35px;
+}
+
+@media  screen and  (max-width: 360px) and (min-width: 320px){
+  .temp-wrap{
+    margin: 30px auto;
+  }
+
+  #temperature-label{
+    font-size: 40px;
+  }
+  .bg-temp{
+    margin-top: 60px;
+  }
+
+  .COVID19-text{
+    font-size: 15px;
+  }
+
+  .text-covide-header{
+    padding-top: 50px;
+  }
+
+  .list-data{
+    margin-top: 20px;
+  }
+
+  .text-covid{
+    font-size: 30px;
+  }
+  .text-data-header{
+    font-size: 15px;
+  }
+  header {
+    
+    margin-left: 5px;
+  }
+  .bg-temp{
+    margin-top: 50px;
+  }
+
+  #img-virus{
+    width: 20px;
+    height: 20px;
+  }
+
+  #SmartOffice-label{
+    font-size: 30px;
+  }
+
+  #floor1-label{
+    font-size: 25px;
+  }
+} 
+
+
+@media  screen and  (max-width: 700px) and (min-width: 360px){
+
+  #temperature-label{
+    font-size: 50px;
+  }
+  .bg-temp{
+    margin-top: 60px;
+  }
+
+  .COVID19-text{
+    font-size: 19px;
+  }
+
+  .text-covide-header{
+    padding-top: 50px;
+  }
+
+  .list-data{
+    margin-top: 20px;
+  }
+
+  .text-covid{
+    font-size: 35px;
+  }
+  .text-data-header{
+    font-size: 20px;
+  }
+  header {
+    
+    margin-left: 5px;
+  }
+  .bg-temp{
+    margin-top: 50px;
+  }
+} 
+
+@media  screen and (max-width: 1200px) and (min-width: 700px){
+  .text-covide-header{
+    padding-top: 100px;
+  }
+  header {
+    margin-left: 90px;
+  }
+  .bg-temp{
+    margin-top: 50px;
+  }
+} 
+
+@media screen and (max-width: 1550px) and (min-width: 1200px) {
+  #temperature-label{
+    font-size: 50px;
+    font-stretch: normal;
+  }
+  #temperature_unit{
+    font-size: 100px;
+    color:#70cf97;
+  }
+  #val-temperature-unit{
+    font-size: 64px;
+    margin-left: 20px;
+  }
+
+  .text-covid {
+    font-size: 30px;
+  }
+
+  .text-data-header{
+    font-size: 20px;
+
+    
+  }
+  .COVID19-text{
+    font-size: 18px;
+  }
+
+} 
+
